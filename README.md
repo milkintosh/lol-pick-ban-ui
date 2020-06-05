@@ -1,3 +1,7 @@
+# instructions to run npm if you don't have node.js
+Go to the page for installing node.js here https://nodejs.org/en/download/
+selec the installer for your respective OS
+
 # lol-champselect-ui
 UI to display the league of legends champion selection in esports tournaments.
 
