@@ -4,23 +4,23 @@ select the installer for your respective OS
 
 # for any UCI people who want to use this
 do the steps for the europe installer.
-To change the names of the teams, go to the layouts folder, then to the layout-volu-europe folder, then src.
-In the src folder, open the App.jsx file with any file editor(you can use notepad).
-There will be elements called blueTeam and redTeam. To change the name of the team, just replace the "name" category with the 
-desired team name. It should look like this.
-blueTeam: {
-    name: "Your blue team name",
-    score: 0,
-    coach: "",
-    color: "rgb(0,151,196)"
-},
- redTeam: {
-    name: "Your red team name",
-    score: 0,
-    coach: "",
-    color: "rgb(222,40,70)"
-}
-Scores can also be changed this way. Just change the value of score to a different number. 
+- To change the names of the teams, go to the layouts folder, then to the layout-volu-europe folder, then src.
+    In the src folder, open the App.jsx file with any file editor(you can use notepad).
+- There will be elements called blueTeam and redTeam. 
+    - To change the name of the team, just replace the "name" category with the desired team name. It should look like this.
+        blueTeam: {
+            name: "Your blue team name",
+            score: 0,
+            coach: "",
+            color: "rgb(0,151,196)"
+        },
+         redTeam: {
+            name: "Your red team name",
+            score: 0,
+            coach: "",
+            color: "rgb(222,40,70)"
+        }
+- Scores can also be changed this way. Just change the value of score to a different number. 
 
 # lol-champselect-ui
 UI to display the league of legends champion selection in esports tournaments.
