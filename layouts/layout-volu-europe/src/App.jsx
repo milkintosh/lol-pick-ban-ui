@@ -6,17 +6,17 @@ function App() {
     const [globalState, setGlobalState] = useState({});
     const [config, setConfig] = useState({
         frontend: {
-            scoreEnabled: false,
+            scoreEnabled: true,
             spellsEnabled: true,
             coachesEnabled: false,
             blueTeam: {
-                name: "Team Blue",
+                name: "Blue Team",
                 score: 0,
                 coach: "",
                 color: "rgb(0,151,196)"
             },
             redTeam: {
-                name: "Team Red",
+                name: "Red Team",
                 score: 0,
                 coach: "",
                 color: "rgb(222,40,70)"
@@ -27,11 +27,11 @@ function App() {
     useEffect(() => {
         Window.PB.on('newState', state => {
             setGlobalState(state.state);
-            setConfig(state.state.config);
+            //setConfig(state.state.config);
         });
 
         Window.PB.on('heartbeat', hb => {
-            setConfig(hb.config);
+            //setConfig(hb.config);
         });
 
         Window.PB.start();
@@ -47,3 +47,4 @@ function App() {
 }
 
 export default App;
+
